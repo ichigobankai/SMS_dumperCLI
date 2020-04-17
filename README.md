@@ -1,7 +1,7 @@
 # SMS_dumperCLI
 SMS Dumper CLI version
 
-usage:
+Usage:
 smsdumper [read|write] [mapper] [file if write|size if read (kB)] [old pcb]
   
 mapper can be:
@@ -15,3 +15,11 @@ mapper can be:
   * 7: Korean Jagun
   * 8: SG1000 Taiwan MSX
   * 9: Sega Master System EXT
+
+-----
+
+Compile on Mac :
+gcc -L /usr/local/Cellar/libusb/1.0.23/lib/ -I /usr/local/include/libusb-1.0 -o smsdumper smsdumper.c -lusb-1.0
+(adjust path accordingly to your configuration)
+
+* LIBSUB library
