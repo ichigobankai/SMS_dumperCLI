@@ -4,7 +4,7 @@ SMS Dumper CLI version
 usage:
 smsdumper <read|write> <mapper> <file if write|size if read (kB)> <old pcb>
   
-<mapper> can be:
+mapper can be:
   
   * 1: Sega Master System compatible
   * 2: Codemasters
