@@ -366,6 +366,19 @@ _rewrite:
 	}
 
 	if(!(strcmp(argv[1],"write"))){
+		
+		myfile = fopen(argv[3],"rb");
+		if(myfile == NULL){
+			printf("~SMS: File %s not found\n", argv[3]); 
+			libusb_release_interface(handle, 1); 
+			libusb_close(handle);
+			libusb_exit(NULL);	
+			return 0; 
+		}
+		fseek(myfile, 0, SEEK_END);
+		game_size = ftell(myfile);
+		rewind(myfile);
+				
 		//flash id
 		stm_cmd.mode = INFOS_ID;
 		stm_cmd.special = 0;
@@ -380,10 +393,7 @@ _rewrite:
 		max_size = sizetable[idx_search];
 		printf("~SMS: ChipID: %08X\n~SMS: %s\n~SMS: Size: %u bytes\n", chipid, nametable[idx_search], max_size);
    
-        myfile = fopen(argv[3],"rb");
-		fseek(myfile, 0, SEEK_END);
-		game_size = ftell(myfile);
-		rewind(myfile);
+
 		
 		if(max_size < game_size){
 			printf("~SMS: Error - Filesize bigger than Flash\n"); 
