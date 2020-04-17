@@ -2,7 +2,7 @@
 SMS Dumper CLI version
 
 usage:
-smsdumper <read|write> <mapper> <file if write|size if read (kB)> <old pcb>
+smsdumper [read|write] [mapper] [file if write|size if read (kB)] [old pcb]
   
 mapper can be:
   
