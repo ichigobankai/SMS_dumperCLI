@@ -3,8 +3,8 @@ SMS Dumper CLI version
 
 Usage:
 smsdumper [read|write] [mapper] [file if write|size if read (kB)] [old pcb]
-  
-mapper can be:
+
+Mapper can be:
   
   * 1: Sega Master System compatible
   * 2: Codemasters
@@ -15,6 +15,8 @@ mapper can be:
   * 7: Korean Jagun
   * 8: SG1000 Taiwan MSX
   * 9: Sega Master System EXT
+
+![Preview](https://github.com/ichigobankai/SMS_dumperCLI/blob/master/preview.png)
 
 -----
 
