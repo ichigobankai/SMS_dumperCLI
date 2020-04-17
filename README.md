@@ -25,3 +25,4 @@ gcc -L /usr/local/Cellar/libusb/1.0.23/lib/ -I /usr/local/include/libusb-1.0 -o 
 (adjust path accordingly to your configuration)
 
 * use LIBSUB library
+https://libusb.info
