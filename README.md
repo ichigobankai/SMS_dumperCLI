@@ -21,6 +21,7 @@ mapper can be:
 Compile on Mac :
 
 gcc -L /usr/local/Cellar/libusb/1.0.23/lib/ -I /usr/local/include/libusb-1.0 -o smsdumper smsdumper.c -lusb-1.0
+
 (adjust path accordingly to your configuration)
 
-* LIBSUB library
+* use LIBSUB library
